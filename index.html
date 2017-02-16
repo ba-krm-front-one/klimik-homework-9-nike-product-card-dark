@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nike Dark Card</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="assets/nike-sb-stefan-janoski-max.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<main class="card">
+		<section class="card-left-side">
+			<section class="card__logo">
+				<img src="assets/logo.png" alt="Nike-logo">
+			</section>
+			<section class="card__item">
+				<img src="assets/nike-sb-stefan-janoski-max.png" alt="Nike">
+			</section>
+			<section class="card-slider-section">
+				<ul class="card-slider">
+					<li class="card-slider__element"></li>
+					<li class="card-slider__element"></li>
+					<li class="card-slider__element"></li>
+					<li class="card-slider__element"></li>
+				</ul>
+			</section>
+		</section>
+			<section class="card-description">
+				<h1 class="card-description__title">Nike SB Stefan Janoski Max</h1>
+				<h2 class="card-description__text">Unisex Skateboarding Shoe</h2>
+			</section>
+			<section class="card-rate">
+				<div class="card-rate__stars">
+					<input id="gorgeous" type="radio">
+					<label title="gorgeous" for="gorgeous"></label>
+
+					<input id="good" type="radio">
+					<label title="good" for="good"></label>
+
+					<input id="regular" type="radio">
+					<label title="regular" for="regular"></label>
+
+					<input id="poor" type="radio">
+					<label title="poor" for="poor"></label>
+
+					<input id="bad" type="radio">
+					<label title="bad" for="bad"></label>
+				</div>
+			</section>
+			<section class="card-form">
+				<form action="#">
+					<select size="1" name="Size" class="card-form__select form-style">
+						<option>Size</option>
+						<option>40</option>
+						<option>41</option>
+						<option>42</option>
+					</select>
+					<select size="1" name="Qty" class="card-form__select form-style">
+						<option>Qty</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+					<button class="card-form__submit form-style">Add to cart</button>
+				</form>
+			</section>
+	</main>
+</html>
