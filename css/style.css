@@ -175,6 +175,9 @@ select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
+.card-form__select option:first-child:checked{
+	display: none;
+}
 .card-form__submit{
 	background-color:  #192332;
 	width: 182px;
