@@ -1,0 +1,190 @@
+@font-face {
+	font-family: 'MuseoSansRounded';
+	src: url('../fonts/MuseoSansLight.woff');
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	background: url(../assets/background-lines.png) no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	font-family: 'MuseoSansRounded', sans-serif;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+.card-left-side{
+	float: left;
+}
+.card-right-side{
+	float: right;
+}
+.card{
+	width: 686px;
+	height: 391px;
+	background-color: #111a28;
+	border-radius: 10px;
+	box-shadow: 0 0 65px 0 rgba(0, 0, 0, 0.82);
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.card__logo{
+	margin-left: 21px;
+	margin-top: 24px;
+}
+.card__item{
+	margin-left: 36px;
+	margin-top: 69px;
+}
+.card__item:hover{
+	transform: scale(1.1);
+}
+.card-slider{
+	list-style: none;
+	padding: 0;
+	margin-left: 178px;
+	margin-top: 60px;
+}
+.card-slider__element{
+	border-radius: 50%;
+	background-color:  #29e3ea;
+	width: 9px;
+	height: 9px;
+	display: inline-block;
+	margin-right: 7px;
+}
+.card-slider__element:nth-child(1){
+	 background-color: #1f273f;
+}
+.card-slider__element:nth-child(2){
+	background-color: #fff;
+}
+.card-slider__element:nth-child(3){
+	background-color: #ed3333;
+}
+.card-slider__element:hover{
+	transform: scale(1.8);
+	border: 1px solid rgba(255, 255, 255, 0.46);
+	cursor: pointer;
+}
+.card-description{
+	color:  rgba(255, 255, 255, 0.4);
+	text-align: left;
+	margin-left: 444px;
+	margin-top: 70px;
+	width: 200px;
+}
+.card-description__title{
+	font-size: 24px;
+	margin: 0;
+	font-weight: 100;
+	color: #e1e1e1;
+}
+.card-description__text{
+	font-size: 14px;
+	font-weight: 100;
+}
+.card-rate{
+	margin-right: 157px;
+	margin-top: 25px;
+}
+.card-rate__stars input:checked ~ label,
+.card-rate__stars label,
+.card-rate__stars label:hover,
+.card-rate__stars label:hover ~ label {
+	background: url('../assets/sprite.png') no-repeat;
+}
+.card-rate__stars input {
+	opacity: 0;
+	position: absolute;
+	z-index: 0;
+}
+.card-rate__stars input:checked ~ label {
+	background-position: 0 -14px;
+	height: 12px;
+	width: 12px;
+}
+.card-rate__stars label {
+	background-position: 0 -1px;
+	height: 12px;
+	width: 12px;
+	float: right;
+	cursor: pointer;
+	margin-right: 5px;
+	position: relative;
+	z-index: 1;
+}
+.card-rate__stars label:hover,
+.card-rate__stars label:hover ~ label {
+	background-position: 0 -14px;
+	height: 12px;
+	width: 12px;
+}
+.card-form{
+	margin-top: 63px;
+	margin-left: 444px;
+}
+.form-style{
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 14px;
+	outline: none;
+}
+.card-form__select{
+	width: 67px;
+	height: 30px;
+	padding-left: 10px;
+	background: url("../assets/rectangle-2.png") 83% center no-repeat #111a28;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.card-form__select option:first-child:checked{
+	display: none;
+}
+.card-form__submit{
+	background-color:  #192332;
+	width: 182px;
+	height: 38px;
+	margin-top: 29px;
+}
+.card-form__submit:hover{
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #192332;
+}
